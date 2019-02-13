@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
   pigeons_array.flatten!.uniq!
 
   while i < pigeons_array.length
-    pigeons[pigeons_array[i]] = {}
+    pigeons[pigeons_array[i]] = {:color, :gender, :lives}
     i += 1
   end
 
