@@ -22,5 +22,20 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  binding.pry
+
+  data[:gender].each do |key, val|
+    pigeons.each do |pigeon, attributes|
+      if val.include?(pigeon)
+        pigeons[pigeon][:gender].push(key)
+      end
+    end
+  end
+
+  data[:lives].each do |key, val|
+    pigeons.each do |pigeon, attributes|
+      if val.include?(pigeon)
+        pigeons[pigeon][:lives].push(key)
+      end
+    end
+  end
 end
