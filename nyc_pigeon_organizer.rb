@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
     i += 1
   end
 
-  data.[:color].each do |key, val|
+  data[:color].each do |key, val|
     pigeons.each do |pigeon, attributes|
       binding.pry
       if val.include?(pigeon)
