@@ -14,6 +14,13 @@ def nyc_pigeon_organizer(data)
     pigeons[pigeons_array[i]] = {color: [], gender: [], lives: []}
     i += 1
   end
-  binding.pry
+
+  data.[:color].each do |key, val|
+    pigeons.each do |pigeon, attributes|
+      if val.include?(pigeon)
+        pigeon[:color] == key
+      end
+    end
+  end
 
 end
