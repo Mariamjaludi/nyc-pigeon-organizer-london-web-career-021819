@@ -17,11 +17,10 @@ def nyc_pigeon_organizer(data)
 
   data[:color].each do |key, val|
     pigeons.each do |pigeon, attributes|
-      binding.pry
       if val.include?(pigeon)
         pigeons[pigeon][:color] = key
       end
     end
   end
-
+  binding.pry
 end
