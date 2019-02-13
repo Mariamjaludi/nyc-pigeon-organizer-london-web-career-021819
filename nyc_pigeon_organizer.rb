@@ -14,6 +14,6 @@ def nyc_pigeon_organizer(data)
     pigeons[pigeons_array[i]] = {:color, :gender, :lives}
     i += 1
   end
-
+  binding.pry
 
 end
