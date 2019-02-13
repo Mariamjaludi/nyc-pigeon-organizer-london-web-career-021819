@@ -7,6 +7,6 @@ def nyc_pigeon_organizer(data)
   data[:color].each do |key, val|
     pigeons_array.push(val)
   end
-  pigeons_array.flatten!
+  pigeons_array.flatten!.uniq
   binding.pry
 end
