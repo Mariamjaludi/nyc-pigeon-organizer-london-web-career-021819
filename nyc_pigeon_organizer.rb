@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
     pigeons.each do |pigeon, attributes|
       binding.pry
       if val.include?(pigeon)
-        pigeons[:color] = key.to_s
+        pigeons[pigeon][:color] = key
       end
     end
   end
