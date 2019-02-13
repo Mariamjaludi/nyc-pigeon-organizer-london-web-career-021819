@@ -13,6 +13,6 @@ def nyc_pigeon_organizer(data)
   while i < pigeons_array.length
     pigeons[pigeons_array[i]] = {}
     i += 1
-  end 
-  
+  end
+
 end
