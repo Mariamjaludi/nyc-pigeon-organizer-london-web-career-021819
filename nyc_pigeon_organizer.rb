@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
   data[:gender].each do |key, val|
     pigeons.each do |pigeon, attributes|
       if val.include?(pigeon)
-        pigeons[pigeon][:gender].push(key)
+        pigeons[pigeon][:gender].push(key.to_s)
       end
     end
   end
