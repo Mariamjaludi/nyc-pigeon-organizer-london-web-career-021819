@@ -14,5 +14,6 @@ def nyc_pigeon_organizer(data)
     pigeons[pigeons_array[i]] = {}
     i += 1
   end
-  binding.pry
+
+  
 end
